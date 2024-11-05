@@ -265,10 +265,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
     }
 
-    ~@PlayerInput()
-    {
-        UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInput.Player.Disable() has not been called.");
-    }
+    //~@PlayerInput()
+    //{
+    //    UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInput.Player.Disable() has not been called.");
+    //}
 
     public void Dispose()
     {

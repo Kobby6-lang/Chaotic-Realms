@@ -11,6 +11,9 @@ public class AnimationAndMovementController : MonoBehaviour
     CharacterController characterController;
     Animator animator;
 
+    public float coyoteTime = 0.2f; // Time in seconds
+    private float timeSinceLeftGround = 0f;
+
     // variables to store optimized setter/getter parameters id
     int isWalkingHash;
     int isRunningHash;
@@ -124,6 +127,10 @@ public class AnimationAndMovementController : MonoBehaviour
     {
         isRunPressed = context.ReadValueAsButton();
     }
+    public bool CanJump()
+    {
+        return timeSinceLeftGround < coyoteTime;
+    }
 
     void handleRotation()
     {
@@ -224,6 +231,15 @@ public class AnimationAndMovementController : MonoBehaviour
         else
         {
             characterController.Move(currentMovement * walkSpeed * Time.deltaTime);
+        }
+
+        if (characterController.isGrounded)
+        {
+            timeSinceLeftGround = 0f;
+        }
+        else
+        {
+            timeSinceLeftGround += Time.deltaTime;
         }
     }
 

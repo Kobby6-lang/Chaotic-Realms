@@ -65,6 +65,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4143526d49068854eabf9ba7298a5b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2116857327967595847
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5313507e70e79de4ea46050570973c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -150,12 +162,13 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WalkState
+  m_Name: PatrolState
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7809689438294129811}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -2116857327967595847}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
