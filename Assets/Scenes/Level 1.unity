@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 15148919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 67, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -748,14 +748,14 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 22.14732
+  m_FocalLength: 29.957037
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -769,10 +769,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 18.6
-  orthographic: 1
-  orthographic size: 110
+  far clip plane: 10000
+  field of view: 43.659477
+  orthographic: 0
+  orthographic size: 245.62521
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -796,13 +796,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25331163, y: -0, z: -0, w: 0.96738476}
-  m_LocalPosition: {x: -53.4, y: 453, z: -762}
+  m_LocalRotation: {x: 0.1806072, y: 0.2625108, z: -0.05008848, w: 0.94655174}
+  m_LocalPosition: {x: -263, y: 295, z: -502}
   m_LocalScale: {x: 2.016, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 29.347, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 21.605, y: 31.001, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,7 +1003,7 @@ Transform:
   m_GameObject: {fileID: 986308857}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -18.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 18.837372, y: 18.837368, z: 18.837372}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1793,8 +1793,8 @@ Transform:
   m_GameObject: {fileID: 1596933043}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -120, z: 0}
-  m_LocalScale: {x: 2937.6514, y: 66.950165, z: 2161.9019}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 664.8787, y: 15.152833, z: 489.30328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 15148920}
@@ -2171,6 +2171,29 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &2079346653
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079346648}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2133629270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2197,17 +2220,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 89e376362a7ad2f4aafe90ea2e2f35c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 335.8
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89e376362a7ad2f4aafe90ea2e2f35c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89e376362a7ad2f4aafe90ea2e2f35c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89e376362a7ad2f4aafe90ea2e2f35c8,
         type: 3}
@@ -2296,6 +2319,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2079346651}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 89e376362a7ad2f4aafe90ea2e2f35c8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2079346653}
   m_SourcePrefab: {fileID: 100100000, guid: 89e376362a7ad2f4aafe90ea2e2f35c8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
