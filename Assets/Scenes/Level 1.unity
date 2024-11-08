@@ -772,7 +772,7 @@ Camera:
   far clip plane: 1000
   field of view: 18.6
   orthographic: 1
-  orthographic size: 100
+  orthographic size: 110
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2159,8 +2159,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 100
+  m_Speed: 40
+  m_Acceleration: 40
   avoidancePriority: 50
   m_AngularSpeed: 80
   m_StoppingDistance: 0
